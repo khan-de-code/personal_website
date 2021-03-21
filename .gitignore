@@ -2,7 +2,9 @@
 *.css.map
 *.sass.map
 *.scss.map
+**/.DS_Store
 
 # Folders
-example/**
-node_modules/**
+example/*
+node_modules/*
+!node_modules/@fortawesome
