@@ -1,0 +1,27 @@
+{
+  "name": "personal_website",
+  "version": "1.0.0",
+  "description": "My website to display who I am, what I do, and point toward my porfolio projects",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "npx tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khan-de-code/personal_website.git"
+  },
+  "author": "Dawson Batz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khan-de-code/personal_website/issues"
+  },
+  "homepage": "https://github.com/khan-de-code/personal_website#readme",
+  "devDependencies": {
+    "sass": "^1.32.8",
+    "typescript": "^4.2.3"
+  }
+}
