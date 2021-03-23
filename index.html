@@ -5,83 +5,111 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="assets/style/styles.css" />
+  <link rel="shortcut icon" href="#">
   <script defer src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
 </head>
 
 <body>
   <div id="nav-bar">
-      <div id="top">
-        <div id="name-info">
-          <span class="image headshot">
-            <img src="https://via.placeholder.com/50" alt="This is a picture of me!" />
-          </span>
-          <h1 id="name">Dawson Batz</h1>
-          <p>Full Stack Software Engineer</p>
-        </div>
-
-        <nav id="nav">
-          <ul>
-            <li>
-              <a id="top-link" href="#top">
-                <span>
-                  <i class="fas fa-home"></i>
-                  Intro
-                </span>
-              </a>
-            </li>
-            <li>
-              <a id="portfolio-link" href="#portfolio">
-                <span>
-                  <i class="fa fa-th-large" aria-hidden="true"></i>
-                  Portfolio
-                </span>
-              </a>
-            </li>
-            <li>
-              <a id="about-link" href="#about">
-                <span>
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  About Me
-                </span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-
+    <div id="top">
+      <div id="name-info">
+        <span class="image headshot">
+          <img src="https://via.placeholder.com/50" alt="This is a picture of me!" />
+        </span>
+        <h1 id="name">Dawson Batz</h1>
+        <p>Full Stack Software Engineer</p>
       </div>
 
-      <div id="bottom">
+      <nav id="nav">
         <ul>
           <li>
-            <a id="github-link" href="https://github.com/khan-de-code" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-github-alt" aria-hidden="true"></i>
+            <a id="top-link"
+              href="javascript:document.querySelector('[id=intro]').scrollIntoView({behavior: 'smooth'});">
+              <span>
+                <i class="fas fa-home"></i>
+                Intro
+              </span>
             </a>
           </li>
           <li>
-            <a id="email-link" href="mailto: batz.dawson@gmail.com">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a id="portfolio-link"
+              href="javascript:document.querySelector('[id=portfolio]').scrollIntoView({behavior: 'smooth'});">
+              <span>
+                <i class="fa fa-th-large" aria-hidden="true"></i>
+                Portfolio
+              </span>
             </a>
           </li>
-
+          <li>
+            <a id="about-link"
+              href="javascript:document.querySelector('[id=about]').scrollIntoView({behavior: 'smooth'});">
+              <span>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                About Me
+              </span>
+            </a>
+          </li>
         </ul>
-      </div>
+      </nav>
+    </div>
 
-  </div>
-
-  <div id="main">
-    <div id="top">
-      <h2>
-        Hi! I am <strong>Dawson Batz</strong>!
-      </h2>
-      <p>
-        I am a full stack software engineer with a passion for writing code. For me, coding is akin to real world magic,
-        where you are able to create cool things from nonsensical words.
-      </p>
-
+    <div id="bottom">
+      <ul>
+        <li>
+          <a id="github-link" href="https://github.com/khan-de-code" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github-alt" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a id="linkedin-link" href="https://www.linkedin.com/in/dawson-batz/" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a id="email-link" href="mailto: batz.dawson@gmail.com">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 
-  <div id="footer">
+  <div id="main">
+    <section id="intro">
+      <div class="slides">
+        <h2>
+          Hi! I'm <strong>Dawson Batz</strong>!
+        </h2>
+        <p>
+          I am a full stack software engineer with a passion for writing code. <br> For me, coding is akin to real world magic, where you are able to create cool things from nonsensical words.
+        </p>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="slides">
+        <h2>Portfolio</h2>
+        <p>Check out my cool stuff!</p>
+
+        <div id="cards">
+          <div class="card">
+            <img src="https://via.placeholder.com/300">
+            <div class="container">
+              <h3>Something</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="slides">
+        <h2>About Me</h2>
+        <p>This is me.</p>
+      </div>
+    </section>
+
 
   </div>
 </body>
